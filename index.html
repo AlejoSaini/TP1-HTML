@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TP1-HTML-3K9-SAINI ALEJO</title>
 </head>
+
 <body>
+
     <head>Este es el header</head>
     <section>
+        <h1>1. Estructura básica del documento HTML</h1>
+        <p>Este documento HTML tiene una estructura básica que incluye la declaración de DOCTYPE, etiquetas de metadatos y un título.</p>
+    </section>
+    <section>
+        <h1>2. Encabezados y Propiedades del Texto</h1>
         <h1><b>Esto es un h1 en negrita</b></h1>
         <h2><i>Esto es un h2 en cursiva</i></h2>
         <h3><u>Esto es un h3 subrayado</u></h3>
@@ -16,6 +24,7 @@
         <h6>Esto es un h6</h6>
     </section>
     <section>
+        <h1>3. Divisiones y Agrupación de Contenido</h1>
         <div>
             <h3>Una división</h3>
             <p>Contenido de la divisón</p>
@@ -31,6 +40,7 @@
     </section>
 
     <section>
+        <h1>4. Enlaces y Listas</h1>
         <a href="https://sysacad.frm.utn.edu.ar/login.php">Esto es un enlace</a>
         <p>Esto es una lista</p>
         <ul>
@@ -46,26 +56,85 @@
         </ol>
         <p>Esto es una lista con enlaces internos</p>
         <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li><a target="_blank" href="#sem">Semántica</a></li>
+            <li><a target="_blank" href="#form">Formulario</a></li>
+            <li><a target="_blank" href="#mul">Multimedia</a></li>
         </ul>
     </section>
-    <h1>5.Elementos multimedia</h1>
-    <p>Imagen:</p>
-    <img src="img/descarga.jpeg" alt="Esto es una imagen" width="200">
-
-    <p>Video local:</p>
-    <video src=""></video>
-
-    <p>Video externo:</p>
-    <iframe width="480" height="360" src="https://www.youtube.com/embed/dIY5WiQ6JyA" title="Gohan se transforma en Super Saiyajin 2 - Español Latino 4K" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <section id="mul">
+        <h1>5.Elementos multimedia</h1>
+        <p>Imagen:</p>
+        <img src="img/descarga.jpeg" alt="Esto es una imagen" width="200">
+    
+        <p>Video local:</p>
+        <video controls src="video/videotp.mp4" width="200"></video>
+    
+        <p>Video externo:</p>
+        <iframe width="480" height="360" src="https://www.youtube.com/embed/dIY5WiQ6JyA"
+            title="Gohan se transforma en Super Saiyajin 2 - Español Latino 4K" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+        <P>Audio local</P>
+        <audio controls src="audio/rhcp-californication.mp3"></audio>
+    </section>
 
     <section>
-        <h1>Tablas</h1>
+        <h1>6. Tablas</h1>
+
+        <p>Esto es una tabla</p>
+        <table border="1">
+            <tr>
+                <td>fila1</td>
+                <td>fila2</td>
+                <td>fila3</td>
+            </tr>
+            <tr>
+                <td>elemento</td>
+                <td>elemento</td>
+                <td>elemento</td>
+            </tr>
+        </table>
+    </section>
+    <section id="form">
+        <h1>7. Formularios</h1>
+        <form action="submit">
+            <label for="">Nombre</label>
+            <input type="text">
+            <br>
+            <label for="">Apellido</label>
+            <input type="text">
+            <br>
+            <label for="">Fecha de nacimiento</label>
+            <input type="date">
+            <br>
+            <label for="">Email</label>
+            <input type="email">
+            <br>
+            <label for="">Contraseña</label>
+            <input type="password">
+            <br>
+            <label for="">Mensaje</label>
+            <textarea name="" id=""></textarea>
+            <br>
+            <label for="">Color favorito</label>
+            <input type="color">
+            <br>
+            <button>Enviar</button>
+        </form>
+    </section>
+    <section id="sem">
+        <h1>8. Semántica en HTML</h1>
+        <h2>Article</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti inventore quo suscipit eveniet provident earum, qui, dolore similique quae magnam iusto quisquam maiores expedita mollitia voluptate optio modi sequi placeat.</p>
+        <h2>Aside</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam autem quasi vitae iure harum officia omnis atque tempore qui impedit dicta, amet minima distinctio perspiciatis, culpa obcaecati? Aliquid, quae perferendis?</p>
+        
+        <p>Las demás etiquetas semánticas como header, main, section, footer y nav, pueden verse en el código.</p>
     </section>
 </body>
-<footer>
-
+<footer id="footer">
+<p>Este es el footer</p>
 </footer>
+
 </html>
